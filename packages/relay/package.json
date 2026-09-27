@@ -1,0 +1,29 @@
+{
+  "name": "@larkwire/relay",
+  "version": "0.1.0",
+  "description": "灵鹊 Larkwire 哑中继：WSS 转发 + 配对路由 + 离线队列 + 计量，对内容零可见",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "larkwire-relay": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@larkwire/protocol": "workspace:^",
+    "tweetnacl": "^1.0.3",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.12"
+  }
+}
