@@ -29,7 +29,7 @@
 npx larkwire up
 ```
 
-未配对会自动先配对（终端显示二维码，手机 App 扫码），随后进入监听。手机 App 下载见官网：<https://larkwire.kowems.site>。
+未配对会自动先配对（终端显示二维码，手机 App 扫码），随后进入监听。手机 App（iOS TestFlight 审核中 / Android 应用市场即将上架）下载见官网：<https://larkwire.kowems.site#download>。
 
 ## 仓库结构
 
