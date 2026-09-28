@@ -15,7 +15,7 @@
 
 | 仓库 | 内容 | 分发 |
 |---|---|---|
-| [kowems/larkwire](https://github.com/kowems/larkwire) | **本仓**·桥 + 协议 | npm：[`larkwire`](https://www.npmjs.com/package/larkwire) / [`@larkwire/protocol`](https://www.npmjs.com/package/@larkwire/protocol) |
+| [kowems/larkwire-core](https://github.com/kowems/larkwire-core) | **本仓**·桥 + 协议 | npm：[`larkwire`](https://www.npmjs.com/package/larkwire) / [`@larkwire/protocol`](https://www.npmjs.com/package/@larkwire/protocol) |
 | [kowems/larkwire-relay](https://github.com/kowems/larkwire-relay) | 哑中继：WSS 转发 / 配对路由 / 离线队列 / 计量 | npm [`@larkwire/relay`](https://www.npmjs.com/package/@larkwire/relay) + Release 单文件 bundle |
 | [kowems/larkwire-desktop](https://github.com/kowems/larkwire-desktop) | macOS 桌面端（Electron 菜单栏壳） | Release 公证 dmg |
 
