@@ -46,22 +46,6 @@ importers:
         specifier: ^1.0.3
         version: 1.0.3
 
-  packages/relay:
-    dependencies:
-      '@larkwire/protocol':
-        specifier: workspace:^
-        version: link:../protocol
-      tweetnacl:
-        specifier: ^1.0.3
-        version: 1.0.3
-      ws:
-        specifier: ^8.18.0
-        version: 8.22.0
-    devDependencies:
-      '@types/ws':
-        specifier: ^8.5.12
-        version: 8.18.1
-
 packages:
 
   '@esbuild/aix-ppc64@0.28.2':
