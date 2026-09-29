@@ -5,7 +5,7 @@
 ```
    手机 App                         公网中继                     你的电脑
 ┌───────────┐   E2E 密文帧    ┌──────────────┐   密文帧    ┌──────────────┐
-│ 看 / 接 / 控 │ ◀─────────── ▶ │  哑中继（盲）  │ ◀───────── ▶ │ larkwire 桥  │
+│ 看 / 接 / 控 │ ◀─────────── ▶ │  哑中继（盲）  │ ◀───────── ▶ │ @larkwire/core 桥 │
 └───────────┘                 └──────────────┘             └──────────────┘
 ```
 
@@ -15,7 +15,7 @@
 
 | 仓库 | 内容 | 分发 |
 |---|---|---|
-| [kowems/larkwire-core](https://github.com/kowems/larkwire-core) | **本仓**·桥 + 协议 | npm：[`larkwire`](https://www.npmjs.com/package/larkwire) / [`@larkwire/protocol`](https://www.npmjs.com/package/@larkwire/protocol) |
+| [kowems/larkwire-core](https://github.com/kowems/larkwire-core) | **本仓**·桥 + 协议 | npm：[`@larkwire/core`](https://www.npmjs.com/package/@larkwire/core)（2026-09-28 由 `larkwire` 更名，旧包已 deprecate；命令名仍为 `larkwire`）/ [`@larkwire/protocol`](https://www.npmjs.com/package/@larkwire/protocol) |
 | [kowems/larkwire-relay](https://github.com/kowems/larkwire-relay) | 哑中继：WSS 转发 / 配对路由 / 离线队列 / 计量 | npm [`@larkwire/relay`](https://www.npmjs.com/package/@larkwire/relay) + Release 单文件 bundle |
 | [kowems/larkwire-desktop](https://github.com/kowems/larkwire-desktop) | macOS 桌面端（Electron 菜单栏壳） | Release 公证 dmg |
 
@@ -26,7 +26,7 @@
 需要 Node.js ≥ 22：
 
 ```bash
-npx larkwire up
+npx @larkwire/core up
 ```
 
 未配对会自动先配对（终端显示二维码，手机 App 扫码），随后进入监听。手机 App（iOS TestFlight 审核中 / Android 应用市场即将上架）下载见官网：<https://larkwire.kowems.site#download>。
@@ -36,7 +36,7 @@ npx larkwire up
 | 包 | 说明 |
 |----|------|
 | [`packages/protocol`](packages/protocol) | 三端共享协议：信封 / 消息类型 / E2E 加密 / UiEvent |
-| [`packages/bridge`](packages/bridge) | 电脑端桥（npm 包名 `larkwire`）：CLI + 可嵌入核心 |
+| [`packages/bridge`](packages/bridge) | 电脑端桥（npm 包名 `@larkwire/core`，bin 命令名 `larkwire`）：CLI + 可嵌入核心 |
 
 中继源码与官网静态页（首页 / 配对落地页 / AASA / 下载占位）已迁至 [larkwire-relay](https://github.com/kowems/larkwire-relay)；macOS 桌面壳在 [larkwire-desktop](https://github.com/kowems/larkwire-desktop)。
 

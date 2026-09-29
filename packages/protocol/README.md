@@ -49,7 +49,7 @@ console.log(fingerprint(a.publicKey)); // 32 位 hex 公钥指纹
 
 ## 相关包
 
-- [`larkwire`](https://www.npmjs.com/package/larkwire) — 电脑端桥
+- [`@larkwire/core`](https://www.npmjs.com/package/@larkwire/core) — 电脑端桥
 - [`@larkwire/relay`](https://www.npmjs.com/package/@larkwire/relay) — 哑中继
 
 官网：<https://larkwire.kowems.site>

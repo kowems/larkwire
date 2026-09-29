@@ -1,4 +1,4 @@
-# larkwire
+# @larkwire/core
 
 灵鹊 Larkwire 的电脑端桥：跑在你的 Mac / Linux 上，把 Claude Code（以及任何 stream-json 兼容的 Agent CLI）会话安全地送上你的手机。
 
@@ -13,22 +13,22 @@
 需要 Node.js ≥ 22。
 
 ```bash
-npx larkwire up
+npx @larkwire/core up
 ```
 
 `up` 是单入口：未配对会自动先配对（终端显示二维码，手机 App 扫码即可），配对成功直接进入监听；配对 token 过期会明确报错退出，不会傻等。
 
-全局安装也行：
+全局安装也行（命令名仍是 `larkwire`）：
 
 ```bash
-npm install -g larkwire
+npm install -g @larkwire/core
 larkwire up
 ```
 
 ## 三分钟上手
 
 1. 手机安装灵鹊 App（iOS TestFlight / Android，见官网 <https://larkwire.kowems.site>）
-2. 电脑终端跑 `npx larkwire up`，用 App 扫终端里的二维码
+2. 电脑终端跑 `npx @larkwire/core up`，用 App 扫终端里的二维码
 3. 正常在电脑上开 Claude Code 干活，会话自动出现在手机上
 
 手机端可以：看实时输出、权限卡点允许/拒绝、人离开电脑后接管发话、会话被占时候查看占用状态。
@@ -49,7 +49,7 @@ larkwire up
 桥核心也可以直接嵌入（桌面壳就这么用）：
 
 ```ts
-import { startBridge, type BridgeHandle } from "larkwire";
+import { startBridge, type BridgeHandle } from "@larkwire/core";
 
 const bridge = await startBridge({
   onLog: (line) => console.log(line),
